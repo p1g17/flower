@@ -31,6 +31,7 @@
       <th>Exception</th>
       <th>Expires</th>
       <th>ETA</th>
+      <th>Download</th>
     </tr>
     </thead>
     <tbody>
@@ -66,6 +67,7 @@
       <td>{{ task.exception }}</td>
       <td>{{ task.expires }}</td>
       <td>{{ task.eta }}</td>
+      <td><a href={{ task.result }}>&nbsp;</a></td>
     </tr>
       {% end %}
     </tbody>
