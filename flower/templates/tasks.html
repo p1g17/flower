@@ -44,12 +44,12 @@
       <td>{{ task.state }}</td>
       <td>{{ task.args }}</td>
       <td>{{ task.kwargs }}</td>
-      <td>
+      <td><a href="sample.html">
         {% if task.state == "SUCCESS" %}
             {{ task.result }}
         {% elif task.state == "FAILURE" %}
             {{ task.exception }}
-        {% end %}
+        {% end %}</a>
       </td>
       <td>{{ humanize(task.received, type='time') }}</td>
       <td>{{ humanize(task.started, type='time') }}</td>
