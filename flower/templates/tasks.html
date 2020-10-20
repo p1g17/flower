@@ -31,7 +31,6 @@
       <th>Exception</th>
       <th>Expires</th>
       <th>ETA</th>
-      <th>Download</th>
     </tr>
     </thead>
     <tbody>
@@ -66,11 +65,6 @@
       <td>{{ task.exception }}</td>
       <td>{{ task.expires }}</td>
       <td>{{ task.eta }}</td>
-      <td>{% if task.state == "SUCCESS" %}
-            {{ task.result }}
-        {% elif task.state == "FAILURE" %}
-            {{ task.exception }}
-        {% end %}</td>
     </tr>
       {% end %}
     </tbody>
